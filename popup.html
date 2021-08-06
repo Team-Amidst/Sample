@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Test Popup</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+	<script language="javascript">
+	function testpopup(url1, message)
+	{
+		window.alert(message);
+		mywindow=window.open(url1,'tespopup','scrollbars=yes,width=500,height=300,resizable');
+	}
+	</script>
+	</head>
+
+
+<body>
+	<header>
+					<ul class="nav">
+						<li><a href="popup.html">PopUp Window</a></li>
+						<li><a href="hidebox.html">HideBox</a></li>
+						<li><a href="swapimage.html">Swap Image</a></li>
+						<li><a href="tableframe.html">Table Frame</a></li>
+						<li><a href="formsample2.html">Form Sample 2</a></li>
+					</ul>
+			</header>
+<br><br><br><br><br><br>
+<br><br><br>
+		<center>
+		<table>
+			<tr>
+				<td><a href="#" onClick="testpopup('https://disneyland.disney.go.com/','Enjoy the Fantasy of Disney')">Disney</a><br></td>
+			</tr>
+			<tr>
+				<td><a href="#" onClick="testpopup('https://www.universalstudioshollywood.com/web/en/us/','Want to see the Life Size Iron Man?')">Universal Studio</a><br></td>
+			</tr>
+			<tr>
+				<td><a href="#" onClick="testpopup('https://www.starcity.com.ph/','See stars while riding rides!')">Star City</a><br></td>
+			</tr>
+<br>		<tr>
+				<td><a href="#" onClick="mywindow.close('')">Close Pop Up</a></td>
+			</tr>
+			
+		</table>
+		</center>
+</body>
+</html>
